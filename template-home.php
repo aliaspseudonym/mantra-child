@@ -154,7 +154,7 @@ get_header(); ?>
 			<div>
 				<br class="no-mobile" />
 				<h1>Poetry</h1>
-				<a href="<?php echo home_url('/'); ?>poetry-there-should-be-a-word/"><h2>Valentine for Ernest Mann</h2></a>
+				<a href="<?php echo home_url('/'); ?>poetry-there-should-be-a-word/"><h2>Poetry: There Should be a Word</h2></a>
 				<p>A poem written by Susan Plett for Margaret Plett, who was the finest mother-in-law a person could ever ask for.</p>
 				<p><a href="<?php echo home_url('/'); ?>category/written-word/poetry/">All Poetry</a></p>
 			</div>
