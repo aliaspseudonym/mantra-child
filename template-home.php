@@ -188,7 +188,7 @@ get_header(); ?>
 		<div>
 			<a href="<?php echo home_url('/'); ?>the-vikas-india-housing-project/"><h1>VIKAS Housing Project</h1>
 			<img src="<?php echo home_url('/'); ?>wp-content/themes/mantra-child/images/vikasthumb.jpg" /></a>
-			<p></p>
+			<p>Nearly 70% of India’s 1.1 billion–plus population still lives in villages in mud huts without electricity, clean water or sanitation. A Calgary couple decided to do change that reality for 12 families.</p>
 		</div>
 		<div>
 			<a href="<?php echo home_url('/'); ?>photo-contest-results/"><h1>Photo Contest Results</h1>
