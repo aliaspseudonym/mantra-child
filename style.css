@@ -367,6 +367,7 @@ border-left: 1px solid gray;
 #mc_embed_signup .small-meta {font-size: 11px;}
 #mc_embed_signup .nowrap {white-space:nowrap;}
 
+
 #mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:1%; min-height:50px;}
 #mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
 * html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
