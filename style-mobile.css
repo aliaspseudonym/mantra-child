@@ -1,0 +1,15 @@
+/* =Responsive Structure
+----------------------------------------------- */
+
+@media (max-width: 650) {
+	#cycler {
+		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.short-columns div {
+		float: none;
+		width: auto;
+	}
+}

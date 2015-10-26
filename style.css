@@ -1,0 +1,472 @@
+/*
+ * Theme Name: Mantra Child
+ * Theme URI: http://www.cryoutcreations.eu/mantra
+ * Description: Mantra Child Theme
+ * Author: Cryout Creations
+ * Author URI: http://www.cryoutcreations.eu
+ * Template: mantra
+ * Version: 2.3.4
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Tags: black, red, blue, white, silver, light, dark, one-column, two-columns, three-columns, right-sidebar, left-sidebar, fixed-layout, fluid-layout, responsive-layout, custom-background, custom-colors, custom-header, custom-menu, featured-image-header, featured-images, front-page-post-form, full-width-template,  microformats, post-formats, rtl-language-support,  sticky-post, theme-options, threaded-comments, translation-ready
+ * Text Domain: mantra-child
+ * Copyright (c) 2011-2013 Cryout Creations
+ * http://www.cryoutcreations.eu
+*/
+
+
+/*
+LAYOUT: Custom Front Page
+DESCRIPTION: Custom front page for Kolbe Times
+*/
+
+/* Adaptive Styles */
+
+@media (max-width: 800px) {
+	.no-mobile{
+		display: none;
+	}
+	#adv-custom-pager {
+	clear: both;
+	float: none;
+	display: inline;
+	position: relative !important;
+	width: 100%
+	}
+	#adv-custom-pager a {
+		display: inline;
+		margin: auto;
+	}
+	#adv-custom-pager img {
+		display: inline;
+		width: 18.5%;
+		float: left;
+		margin-left: 1.25%;
+		margin-top: 5px;
+	}
+	.cycle-slideshow {
+		clear: both;
+		width: 100% !important;
+	}
+	#quote h1 {
+		font-size: x-large !important;
+	}
+	#quote p {
+		font-size: medium !important;
+	}
+		#grid div {
+		float: none;
+		width: auto;
+		clear: both;
+		border-left: none !important;
+		min-height: 190px !important;
+	}
+	#grid div div {	
+		border-top: none !important;
+		border-bottom: 2px solid gray;
+		
+	}
+	#grid img {
+		margin-top: 2px !important;
+		margin-bottom: 2px !important;
+		width: 37% !important;
+	}
+	.row {
+		width: 100% !important;
+		border-bottom: 1px solid gray !important;
+	}
+	.row:last-child {
+		border-bottom: none !important;
+	}
+}
+
+@media (max-width: 650px) {
+	#cycler {
+		width: 100%;
+	}
+
+	.writers-column-1 div{ 
+		width: 47% !important;
+	}
+	.writers-column-2 div {
+		width: 100% !important;
+	}
+	#writers {
+		left: 1% !important;
+	}
+	#writers div:nth-child(2) div:first-child {
+		border-left: none !important;
+	}
+	.feat-image {
+		float: none !important;
+		width: 80% !important;
+		margin: auto;
+	}
+	.category-excerpt .entry-title {
+		display: none !important;
+	}
+	.category-excerpt {
+		width: 100% !important;
+	}
+	.mobile-only {
+		display: inline !important;
+	}
+	.entry-thumbnail {
+		display: none !important;
+	}
+	.entry-thumbnail-mobile {
+		display: inline !important;
+	}
+	.entry-container {
+		width: 100% !important;
+		margin-left: 0%;
+	}
+	.entry-content div {
+	display: block !important;
+	float: none !important;
+	}
+	.entry-content img {
+	display: block !important;
+	float: none !important;
+	}
+	#entry-author-info #author-avatar {
+	clear: both !important;
+	width: 100% !important;
+	height: 150px !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
+}
+#entry-author-info #author-description {
+	float: none !important;
+	clear: both !important;
+	padding-left: none !important;
+	width: 100% !important;
+	margin: 0 0 0 0 !important;
+}
+}
+.mobile-only {
+	display: none;
+}
+
+
+
+.noshow {
+	display: none;
+}
+
+#cycler { 
+	border: 5px solid black;
+	width: 85%;
+	min-width: 200px;
+	margin: auto; 
+	padding: 0; 
+	position: relative;
+	background-color: black;
+	margin-bottom: 10px;
+	overflow: hidden;
+	box-shadow: 3px 3px 2px grey;
+}
+
+/* custom home page */
+.cycle-slideshow div { 
+    position: absolute; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+.cycle-slideshow img{
+    position: relative; top: 0; left: 0;
+    width: 100%; padding: 0; display: block;
+}
+
+.cycle-slideshow {
+	position: relative;
+	width: 83.6%;
+	border-right: 5px black;
+}
+
+#adv-custom-pager {
+	position: absolute;
+	padding: none;
+	top: 0;
+	right: 0;
+	width: 15.675%;
+}
+#adv-custom-pager a img {
+	padding: none;
+
+}
+
+#cycler ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+#quote {
+	width: 75%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+#quote h1 {
+	font-size: xx-large;
+	text-align: center;
+	line-height: 110%
+}
+#quote p {
+	line-height: 110%; 	
+	font-style: bold;
+	font-size: x-large;
+	text-align: center;
+}
+
+/* No sidebar in this version.
+#sidebar  {
+	display:block;
+	float: left;
+	overflow: hidden;
+	width: 15%;
+	border-right:2px dashed #EAEAEA;
+}
+#sidebar  div {
+	border-left: none;
+}
+*/
+
+#grid {
+	width: 95%;
+	display: block;
+	margin:auto;
+	padding-bottom: 20px;
+	position: relative;
+	left: 1.5%;
+}
+#grid p {
+	font-size: 15px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+
+#grid div {
+	padding-top: 10px;
+	position: relative;
+	margin-left: 5px;
+	min-height: 190px;
+}
+#grid img {
+	display: block;
+	max-height: 200px;
+	max-width: 200px;
+	float: left;
+	position: relative;
+	left: 0%;
+	top: 5px;
+	width: 38%;
+	margin: 2px 2px 2px 5px;
+}
+#grid  h1 {
+	font-weight: bold;
+	font-size: 17px;
+	text-indent: 5%;
+	padding-bottom: 4px;
+}
+#grid h2 {
+	font-size: 21px;
+	line-height: 22px;
+}
+
+#grid .row {
+height: auto;
+display: inline;
+width: 47%;
+float: left;
+border-left: 1px solid gray;
+}
+
+#grid .row:first-child {
+	border: none;
+}
+
+#grid .row div:last-child {
+	border: none;
+}
+
+#grid .row div {
+	display: inline;
+	float: left;
+	border-bottom: 1px solid gray;
+	padding-bottom: 10px;
+}
+
+#grid .row div div {
+	clear: none;
+	padding-right: 0%;
+	margin: none;
+	float: right;
+	border: none;
+	display: inline;
+	width: 58%;
+}
+
+#writers  {
+	margin: auto;
+	width: 100%;
+	display: block;
+	position: relative;
+	left: 1.5%;
+}
+
+#writers div div {
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 32%;
+	float: left;
+	border-left: 2px solid gray;
+}
+
+#writers div img {
+	width: 80%;
+	margin: auto;
+	display: block;
+}
+
+#writers h1 {
+	font-size: large;
+	text-align: center;
+	line-height: 110%;
+	font-weight: bold;
+}
+#writers p {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+}
+
+#writers ul {
+	width: 80%;
+	margin: auto;
+}
+#writers li {
+}
+#writers div:first-child div:first-child {
+	border-left: none;
+}
+
+/* MailChimp Form Embed Code - Classic - 08/17/2011 */
+#mc_embed_signup {width: 75%; margin: auto; border: 1px solid #c25f0f;}
+#mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
+#mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
+#mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+#mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#mc_embed_signup input:focus {border-color:#333;}
+#mc_embed_signup .button {clear:both; background-color: #c25f0f; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button:hover {background-color:#d92008;}
+#mc_embed_signup .small-meta {font-size: 11px;}
+#mc_embed_signup .nowrap {white-space:nowrap;}
+
+#mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:1%; min-height:50px;}
+#mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
+* html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
+#mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
+#mc_embed_signup .mc-field-group input {display:block; width:100%; padding:8px 0; text-indent:2%;}
+#mc_embed_signup .mc-field-group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px;}
+
+#mc_embed_signup .datefield, #mc_embed_signup .phonefield-us{padding:5px 0;}
+#mc_embed_signup .datefield input, #mc_embed_signup .phonefield-us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:center; padding:5px 0 2px 0;}
+#mc_embed_signup .phonefield-us .phonearea input, #mc_embed_signup .phonefield-us .phonedetail1 input{width:40px;}
+#mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
+#mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
+
+#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%; float: right; display: relative; bottom: 3%;}
+#mc_embed_signup .asterisk {color:#c60; font-size:200%;}
+#mc_embed_signup .mc-field-group .asterisk {position:absolute; top:25px; right:10px;}        
+#mc_embed_signup .clear {clear:both;}
+
+#mc_embed_signup .mc-field-group.input-group ul {margin:0; padding:5px 0; list-style:none;}
+#mc_embed_signup .mc-field-group.input-group ul li {display:block; padding:3px 0; margin:0;}
+#mc_embed_signup .mc-field-group.input-group label {display:inline;}
+#mc_embed_signup .mc-field-group.input-group input {display:inline; width:auto; border:none;}
+
+#mc_embed_signup div#mce-responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#mc_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#mc_embed_signup #mce-error-response {display:none;}
+#mc_embed_signup #mce-success-response {color:#529214; display:none;}
+#mc_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+
+#mc-embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
+#mc_embed_signup #num-subscribers {font-size:1.1em;}
+#mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
+
+
+/* custom category page */
+
+
+
+.entry-thumbnail {
+	float: left;
+	width: 25%;
+	margin-right: 1%
+}
+.entry-thumbnail-mobile {
+	display: none;
+}
+.entry-container {
+	float: left;
+	width: 73%;
+}
+
+.feat-image {
+	float: left;
+	width: 25%;
+}
+
+
+.category-excerpt {
+	float: left;
+	width: 73%;
+	margin-left: 1%;
+}
+.category-excerpt p {
+	padding-top: 0px;
+	
+}
+
+#content .entry-title {
+	font-size: 25px;
+}
+
+/* author description tag */
+
+#author-avatar {
+	float: left;
+	margin-right: 5px;
+}
+#author-info {
+	min-height: 150px;
+}
+#author-info h2 {
+	font-size: 32px;
+	line-height: 32px;
+	
+}
+#entry-author-info #author-avatar {
+	background: #fff;
+	border: none;
+	float: left;
+	height: auto;
+	margin: 0 -104px 0 0;
+	padding-top: 0 px;
+	-moz-box-shadow:none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	width: 20%;
+}
+#entry-author-info #author-description {
+	float: left;
+	padding-left: 10px;
+	width: 70%;
+	margin-top: 10px;
+}
