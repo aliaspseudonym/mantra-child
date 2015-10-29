@@ -123,7 +123,7 @@ get_header(); ?>
 				<br class="no-mobile" />
 				<h1>Book Reviews</h1>
 				<a href="<?php echo home_url('/'); ?>Book-review/"><h2>Two New Treasures</h2></a>
-				<p>Kolbe Times Editor Laura Locke shares a couple of books she found delightful and inspiring.</p>
+				<p>Kolbe Times editor Laura Locke shares two books that she found both delightful and inspiring.</p>
 				<p><a href="<?php echo home_url('/'); ?>category/written-word/book-reviews/">All Book Reviews</a></p>
 			</div>
 			<a href="<?php echo home_url('/'); ?>book-review/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/04/books.jpg"/></a>
@@ -146,7 +146,7 @@ get_header(); ?>
 				<p>Graduate student Amanda Achtman reflects on two courageous artists who took great risks in expressing life, love and paradox.</p>
 				<p><a href="<?php echo home_url('/'); ?>category/guest-columnists/">All Guest Columnists</a></p>
 			</div>
-			<a href="<?php echo home_url('/'); ?>djews-crucifixions-and-loving-the-difficult/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/GuestColumnistThumb.jpg"/></a>
+			<a href="<?php echo home_url('/'); ?>jews-crucifixions-and-loving-the-difficult/"><img src="<?php echo home_url('/'); ?>wp-content/uploads/2015/05/GuestColumnistThumb.jpg"/></a>
 		</div>
 	</div>
 	<div class="row">
@@ -188,7 +188,7 @@ get_header(); ?>
 		<div>
 			<a href="<?php echo home_url('/'); ?>the-vikas-india-housing-project/"><h1>VIKAS Housing Project</h1>
 			<img src="<?php echo home_url('/'); ?>wp-content/themes/mantra-child/images/vikasthumb.jpg" /></a>
-			<p>Canadians partnering with a community in India, changing lives one family at a time.</p>
+			<p>Canadians are partnering with a community in India, changing lives one family at a time.</p>
 		</div>
 		<div>
 			<a href="<?php echo home_url('/'); ?>photo-contest-results/"><h1>Photo Contest Winners</h1>
