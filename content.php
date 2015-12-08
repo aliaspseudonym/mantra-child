@@ -44,7 +44,7 @@ foreach ($options as $key => $value) {
 		
 		</header><!-- .entry-header -->
 			<?php cryout_post_before_content_hook();  
-			?><?php if ( is_archive() || is_search() ) : // Display excerpts for archives and search. ?>
+			?><?php if ( is_archive() || is_search() || is_front_page() ) : // Display excerpts for archives and search and front page. ?>
 			
 						<?php if ($mantra_excerptarchive != "Full Post" ){ ?>
 						<div class="entry-thumbnail-mobile">
