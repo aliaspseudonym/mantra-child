@@ -1,6 +1,6 @@
 <?php
 /**
- * The default template for displaying content
+ * Frontpage content for kolbe times
  *
  * @package Cryout Creations
  * @subpackage Mantra
@@ -15,14 +15,10 @@ foreach ($options as $key => $value) {
 ?><?php cryout_before_article_hook(); ?>
 
 	<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<?php if ( is_archive() || is_search() || is_front_page ) { /* custom formatting for archive, search and front page */ ?>
-		<?php if ($mantra_excerptarchive != "Full Post" ){ ?>
 			<div class="entry-thumbnail">
 				<?php the_post_thumbnail('medium'); ?>
 			</div>
 		<div class="entry-container">
-		<?php }
-		} ?>
 	
 		<header class="entry-header">	
 				<hgroup>
@@ -44,9 +40,7 @@ foreach ($options as $key => $value) {
 		
 		</header><!-- .entry-header -->
 			<?php cryout_post_before_content_hook();  
-			?><?php if ( is_archive() || is_search() || is_front_page() ) : // Display excerpts for archives and search and front page. ?>
-			
-						<?php if ($mantra_excerptarchive != "Full Post" ){ ?>
+			?>
 						<div class="entry-thumbnail-mobile">
 							<?php the_post_thumbnail('medium'); ?>
 						</div>
@@ -54,32 +48,7 @@ foreach ($options as $key => $value) {
 						<?php the_excerpt(); ?>
 						</div><!-- .entry-summary -->
 		</div> <!-- .entry-container -->
-						<?php } else { ?>
-						<div class="entry-content">
-						<?php mantra_set_featured_thumb(); ?>
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'mantra' ) . '</span>', 'after' => '</div>' ) ); ?>
-						</div><!-- .entry-content --> 
-						<?php }   ?>
-			
-		<?php else : 
-				if (is_sticky() && $mantra_excerptsticky == "Full Post")  $sticky_test=1; else $sticky_test=0;
-				if ($mantra_excerpthome != "Full Post" && $sticky_test==0){ ?>
-					
-					
-						<div class="entry-summary">
-						<?php mantra_set_featured_thumb(); ?>
-						<?php the_excerpt(); ?>
-						</div><!-- .entry-summary --> 
-						<?php } else { ?>
-						<div class="entry-content">
-						<?php the_content(); ?>
-						<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'mantra' ) . '</span>', 'after' => '</div>' ) ); ?>
-						</div><!-- .entry-content --> 
-						<?php }  
-
-			endif; 
-		 cryout_post_after_content_hook();  ?>
+		 <?php cryout_post_after_content_hook();  ?>
 		<footer class="entry-meta2">
 	<?php	$tag_list = get_the_tag_list( '', ', ' ); 
 if ( $tag_list ) { ?>
