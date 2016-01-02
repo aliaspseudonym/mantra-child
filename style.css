@@ -196,8 +196,11 @@ DESCRIPTION: Custom front page for Kolbe Times
 
 
 
-
 /* custom home page */
+
+
+
+
 .cycle-slideshow div { 
     position: absolute; top: 0; left: 0;
     width: 100%; padding: 0; display: block;
@@ -375,14 +378,14 @@ border-left: 1px solid gray;
 
 
 /* MailChimp Form Embed Code - Classic - 08/17/2011 */
-#mc_embed_signup {width: 80%; margin: auto auto 30px auto ; border: 1px solid #c25f0f;}
+#mc_embed_signup {width: 80%; margin: auto auto 30px auto ; border: 1px solid #df7a1c;}
 #mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
 #mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
 #mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
 #mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
 #mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
 #mc_embed_signup input:focus {border-color:#333;}
-#mc_embed_signup .button {float: right; clear:both; background-color: #c25f0f; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 10% 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button {float: right; clear:both; background-color: #df7a1c; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 10% 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
 #mc_embed_signup .button:hover {background-color:#d92008;}
 #mc_embed_signup .small-meta {font-size: 11px;}
 #mc_embed_signup .nowrap {white-space:nowrap;}
@@ -422,6 +425,14 @@ border-left: 1px solid gray;
 #mc_embed_signup #num-subscribers {font-size:1.1em;}
 #mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
 
+.frontpage-mailchimp h2 {
+	color: black !important;
+	display: block;
+	width: 95%;
+	margin:auto;
+	font-weight: normal !important;
+	font-size: 100%;
+}
 
 
 /* subscribe button in header */
@@ -433,7 +444,7 @@ border-left: 1px solid gray;
 	max-width: 34%;
 	margin-top: 2px;
 }
-#mc_embed_signup_header .button {clear:both; background-color: #c25f0f; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup_header .button {clear:both; background-color: #df7a1c; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
 #mc_embed_signup_header .button:hover {background-color:#d92008;}
 
 #mc_embed_signup_header .clear {
@@ -455,9 +466,30 @@ border-left: 1px solid gray;
 	display: inline;
 	max-width: 66%;
 }
+/*regular sidebar */
 
+.thumbholder {
+	display: block;
+	width: 200px;
+	margin: auto;
+}
+#primary .thumbholder .side-thumbnail img {
+	clear: both;
+	width: 200px !important;
+	margin: auto !important;
+	height: auto;
+	float: none;
+	text-align: center;
+	display: inline;
+}
 
 /* Front page sidebar */
+
+.frontpage-rows #pgc-1082-1-1{
+	border-left: 1px dashed #EAEAEA;
+	padding-left: 4px;
+}
+
 
 .thumbholder  .entry-thumbnail {
 	clear: both;
