@@ -23,8 +23,27 @@ DESCRIPTION: Custom front page for Kolbe Times
 /* Adaptive Styles */
 
 @media (max-width: 800px) {
-	.no-mobile{
-		display: none;
+
+	#access {
+		clear: both;
+		width: 90%;
+		margin: auto;
+		float: none;
+	}
+	.front-hero {
+		width: 90%;
+	}
+	
+	#mc_embed_signup_header {
+		width: 90% !important;
+		margin: auto !important;
+		float: none !important;
+		display: inline !important;
+		text-align: center;
+		margin-top: 5px !important;
+	}
+	.widget .no-mobile {
+		display: none !important;
 	}
 	#adv-custom-pager {
 	clear: both;
@@ -84,7 +103,11 @@ DESCRIPTION: Custom front page for Kolbe Times
 	#cycler {
 		width: 100%;
 	}
-
+	#mc_embed_signup .mc-field-group {
+		clear: both !important;
+		width: 85% !important;
+		display: block !important;
+	}
 	.writers-column-1 div{ 
 		width: 47% !important;
 	}
@@ -112,6 +135,10 @@ DESCRIPTION: Custom front page for Kolbe Times
 		display: inline !important;
 	}
 	.entry-thumbnail {
+		display: none !important;
+	}
+	
+	.frontpage-recloop .entry-thumbnail {
 		display: none !important;
 	}
 	.entry-thumbnail-mobile {
@@ -167,7 +194,13 @@ DESCRIPTION: Custom front page for Kolbe Times
 	box-shadow: 3px 3px 2px grey;
 }
 
+
+
 /* custom home page */
+
+
+
+
 .cycle-slideshow div { 
     position: absolute; top: 0; left: 0;
     width: 100%; padding: 0; display: block;
@@ -221,19 +254,8 @@ DESCRIPTION: Custom front page for Kolbe Times
 	text-align: center;
 }
 
-/* No sidebar in this version.
-#sidebar  {
-	display:block;
-	float: left;
-	overflow: hidden;
-	width: 15%;
-	border-right:2px dashed #EAEAEA;
-}
-#sidebar  div {
-	border-left: none;
-}
-*/
 
+/* support for old front page*/
 #grid {
 	width: 95%;
 	display: block;
@@ -354,20 +376,23 @@ border-left: 1px solid gray;
 	border-left: none;
 }
 
+
 /* MailChimp Form Embed Code - Classic - 08/17/2011 */
-#mc_embed_signup {width: 75%; margin: auto; border: 1px solid #c25f0f;}
+#mc_embed_signup {width: 80%; margin: auto auto 30px auto ; border: 1px solid #df7a1c;}
 #mc_embed_signup form {display:block; position:relative; text-align:left; padding:10px 0 10px 3%}
 #mc_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.4em;}
 #mc_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
 #mc_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
 #mc_embed_signup input[type=radio]{-webkit-appearance:radio;}
 #mc_embed_signup input:focus {border-color:#333;}
-#mc_embed_signup .button {clear:both; background-color: #c25f0f; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup .button {float: right; clear:both; background-color: #df7a1c; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 10% 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
 #mc_embed_signup .button:hover {background-color:#d92008;}
 #mc_embed_signup .small-meta {font-size: 11px;}
 #mc_embed_signup .nowrap {white-space:nowrap;}
-
-#mc_embed_signup .mc-field-group {clear:left; position:relative; width:96%; padding-bottom:1%; min-height:50px;}
+#mc_embed_signup .unsub {margin-left: 5%;}
+/*this is the one you changed VVV */
+#mc_embed_signup .mc-field-group {clear:none; float: left; display: inline-block; position:relative; margin-right: 4%; margin-left: 4%; width:40%; padding-bottom:1%; min-height:50px;}
+/* ^^^ */
 #mc_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
 * html #mc_embed_signup .size1of2 {margin-right:2%; /* Fix for IE6 double margins. */}
 #mc_embed_signup .mc-field-group label {display:block; margin-bottom:3px;}
@@ -380,7 +405,7 @@ border-left: 1px solid gray;
 #mc_embed_signup .datefield .monthfield input, #mc_embed_signup .datefield .dayfield input{width:30px;}
 #mc_embed_signup .datefield label, #mc_embed_signup .phonefield-us label{display:none;}
 
-#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%; float: right; display: relative; bottom: 3%;}
+#mc_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%; float: left;}
 #mc_embed_signup .asterisk {color:#c60; font-size:200%;}
 #mc_embed_signup .mc-field-group .asterisk {position:absolute; top:25px; right:10px;}        
 #mc_embed_signup .clear {clear:both;}
@@ -400,10 +425,106 @@ border-left: 1px solid gray;
 #mc_embed_signup #num-subscribers {font-size:1.1em;}
 #mc_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
 
+.frontpage-mailchimp h2 {
+	color: black !important;
+	display: block;
+	width: 95%;
+	margin:auto;
+	font-weight: normal !important;
+	font-size: 100%;
+}
+
+
+/* subscribe button in header */
+
+#mc_embed_signup_header {
+	margin-right: 5px;
+	float: right;
+	display: inline;
+	max-width: 34%;
+	margin-top: 2px;
+}
+#mc_embed_signup_header .button {clear:both; background-color: #df7a1c; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding: 0 22px; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#mc_embed_signup_header .button:hover {background-color:#d92008;}
+
+#mc_embed_signup_header .clear {
+	display: inline;
+	clear: none;
+}
+
+#mc_embed_signup_header #mc-embedded-subscribe {
+	display: inline;
+	clear: none;
+}
+#mc_embed_signup_header #mc-embedded-subscribe {
+	clear: none;
+	display: inline;
+	margin: 0 0 0 0;
+}
+
+#access {
+	display: inline;
+	max-width: 66%;
+}
+/*regular sidebar */
+
+.thumbholder {
+	display: block;
+	width: 200px;
+	margin: auto;
+}
+#primary .thumbholder .side-thumbnail img {
+	clear: both;
+	width: 200px !important;
+	margin: auto !important;
+	height: auto;
+	float: none;
+	text-align: center;
+	display: inline;
+}
+
+/* Front page sidebar */
+
+.frontpage-rows #pgc-1082-1-1{
+	border-left: 1px dashed #EAEAEA;
+	padding-left: 4px;
+}
+
+
+.thumbholder  .entry-thumbnail {
+	clear: both;
+	width: 85%;
+	margin: auto;
+	float: none;
+}
+
+.thumbholder .entry-title {
+	width: 85%;
+	margin: auto;
+	font-weight: bold !important;
+	font-size: 14px !important;
+	text-align: center;	
+}
+
+.frontpage-catloop .widget-title {
+	color: white;
+	font-weight: bold;
+}
+
+.frontpage-recloop .widget-title {
+	background: url(images/stripbg.jpg) no-repeat;
+	background-color: white;
+	color: white;
+	font-size: 24px !important;
+	
+}
+.widget_siteorigin-panels-postloop {
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
 
 /* custom category page */
-
-
 
 .entry-thumbnail {
 	float: left;
@@ -422,7 +543,6 @@ border-left: 1px solid gray;
 	float: left;
 	width: 25%;
 }
-
 
 .category-excerpt {
 	float: left;
