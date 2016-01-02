@@ -199,7 +199,10 @@ DESCRIPTION: Custom front page for Kolbe Times
 /* custom home page */
 
 
-
+#sidemenu {
+	float: right !important;
+	clear: none !important;
+}
 
 .cycle-slideshow div { 
     position: absolute; top: 0; left: 0;

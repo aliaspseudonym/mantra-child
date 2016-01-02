@@ -44,12 +44,16 @@
 
 			</nav><!-- #access -->
 			
+		<div class="socials" id="sidemenu">
+			<a target="_blank" rel="nofollow" href="https://www.facebook.com/pages/Kolbe-Times/383680108494642" class="socialicons social-Facebook" title="Facebook"><img alt="Facebook" src="http://localhost/kolbetimes/wp-content/themes/mantra/images/socials/Facebook.png" /></a>
+			<a target="_blank" rel="nofollow" href="http://www.kolbetimes.com/feed/" class="socialicons social-RSS" title="RSS"><img alt="RSS" src="http://localhost/kolbetimes/wp-content/themes/mantra/images/socials/RSS.png" /></a>
+			<a target="_blank" rel="nofollow" href="https://twitter.com/KolbeTimes" class="socialicons social-Twitter" title="Twitter"><img alt="Twitter" src="http://localhost/kolbetimes/wp-content/themes/mantra/images/socials/Twitter.png" /></a></div>
 						<!-- Begin MailChimp Signup Form -->
 <div id="mc_embed_signup_header">
 <form action="//kolbetimes.us12.list-manage.com/subscribe/post?u=18821a9059b1c479c0607e9b3&amp;id=e3bc9fa822" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
 <div class="mc-field-group">
-	<label for="mce-EMAIL">Join our mailing list!
+	<label for="mce-EMAIL">
 </label>
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="email address">	<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
 </div>
