@@ -90,7 +90,7 @@ get_header(); ?>
 <div id="mc_embed_signup">
 <form action="//kolbetimes.us12.list-manage.com/subscribe/post?u=18821a9059b1c479c0607e9b3&amp;id=e3bc9fa822" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
-	<h2>Kolbe Times is going digital!  We are no longer distributing print issues, but you can sign up here for your FREE Kolbe Times E-Magazine, emailed monthly. </h2>
+	<h2>Kolbe Times is going digital!  We are no longer distributing print issues, but you can sign up here for your FREE Kolbe Times Newsletter, emailed monthly.  Everyone who subscribes before Jan. 15, 2016 will be entered to win a complete Box Set collection of Steve Bell’s music, valued at over $400.</h2>
 <div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
 <div class="mc-field-group">
 	<label for="mce-LNAME">Name </label>
