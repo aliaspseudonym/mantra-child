@@ -24,6 +24,7 @@ foreach ($options as $key => $value) {
 		<header class="entry-header">	
 				<hgroup>
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Permalink to %s', 'mantra' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+					<h3 class="side-author">by <?php the_author_link(); ?></h3>
 				</hgroup>
 			<?php cryout_post_title_hook(); 
 			?>
