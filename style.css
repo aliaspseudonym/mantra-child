@@ -499,6 +499,13 @@ border-left: 1px solid gray;
 	font-size: 10px;
 }
 
+.front-editor img {
+	border: none !important;
+}
+.front-headline h1 {
+	font-size: 36px;
+}
+
 /* Front page sidebar */
 
 .frontpage-rows #pgc-1082-1-1{
